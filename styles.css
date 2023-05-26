@@ -1,0 +1,109 @@
+body{
+  width: 80%;
+  margin: auto;
+  background-color: lavender;
+}
+
+img {
+  width: 10%;
+  height: auto;
+}
+
+a img {
+  width: 40%;
+}
+
+header {
+  background-color: rgb(176, 234, 248);
+}
+.container {
+  display: grid;
+  grid-template-areas:
+  'headline headline headline headline'
+  'welcome welcome welcome welcome'
+  'projects projects projects projects'
+  'box-1 box-2 box-3 box-4'
+  'copyright copyright copyright copyright';
+  gap: 1rem;
+}
+
+.headline,
+.welcome,
+.sidebar,
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.copyright {
+  border: 5px #bfd5e7 solid;
+  padding: 1rem;
+}
+
+.headline {
+  grid-area: headline;
+  text-align: center;
+}
+
+.welcome {
+  grid-area: welcome;
+}
+
+.projects{
+  grid-area: projects;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+.box-4 {
+  grid-area: box-4;
+}
+
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+p a:hover{
+  color: rgb(15, 73, 219);
+  text-transform: uppercase;
+}
+
+
+.welcome,
+.copyright {
+  background-color: rgb(107, 107, 230);
+  color: whitesmoke;
+}
+
+@media(max-width: 500px) {
+  .container {
+      grid-template-areas:
+      'headline'
+      'welcome'
+      'sidebar'
+      'box-1'
+      'box-2'
+      'box-3'
+      'box-4'
+      'copyright'
+      ;
+  }
+}
