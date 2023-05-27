@@ -4,8 +4,8 @@ body{
   background-color: lavender;
 }
 
-img {
-  width: 10%;
+.profile img {
+  width: 15%;
   height: auto;
 }
 
